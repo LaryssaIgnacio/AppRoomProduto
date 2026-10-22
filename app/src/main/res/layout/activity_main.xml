@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Produto" />
+
+        <EditText
+            android:id="@+id/editProductPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Preço" />
+
+        <EditText
+            android:id="@+id/editProductDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição" />
+
+        <!-- A8: quantidade em estoque -->
+        <EditText
+            android:id="@+id/editProductQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Quantidade em estoque" />
+
+        <Button
+            android:id="@+id/btnInserirProduto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inserir Produto" />
+
+        <Button
+            android:id="@+id/btnListarProdutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listar Produtos" />
+
+        <!-- A5: buscar por nome -->
+        <EditText
+            android:id="@+id/editBusca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Buscar por nome" />
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+        <!-- A6: excluir todos -->
+        <Button
+            android:id="@+id/btnExcluirTodos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Excluir Todos" />
+
+        <!-- A7: atualizar preço -->
+        <EditText
+            android:id="@+id/editProductId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:inputType="number"
+            android:hint="ID do produto" />
+
+        <EditText
+            android:id="@+id/editNovoPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Novo preço" />
+
+        <Button
+            android:id="@+id/btnAtualizarPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atualizar Preço" />
+
+        <!-- A4: total do estoque -->
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- A3: lista de produtos na tela -->
+        <TextView
+            android:id="@+id/txtListaProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
